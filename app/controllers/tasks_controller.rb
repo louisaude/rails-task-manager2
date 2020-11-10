@@ -10,7 +10,7 @@ class TasksController < ApplicationController
     @task = Task.new(task_param)
     @task.save
     # Will raise ActiveModel::ForbiddenAttributesError
-    redirect_to tasks_path
+    # redirect_to tasks_path
   end
 
   private
